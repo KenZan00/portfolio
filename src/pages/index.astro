@@ -1,8 +1,85 @@
 ---
 import Layout from "../layout/Layout.astro";
+import { Image } from 'astro:assets';
+import HeroImage from "../assets/hero.svg";
+import GithubIcon from "../assets/github.svg";
+import LinkedinIcon from "../assets/linkedin.svg";
+import MailIcon from "../assets/mail.svg";
+import TestImg from "../assets/test-img.jpg";
 ---
 
 <Layout title="Portfolio home">
-    <h1>My Portfolio</h1>
-    <p>This is the home page.</p>
+    <section class="flex items-center justify-around flex-col md:flex-row gap-12 mt-6">
+        <div class="w-1/3 max-w-50 rounded-lg overflow-hidden">
+            <Image
+                src={HeroImage}
+                alt="Kenny"
+                class="object-contain"
+            />        
+        </div>
+
+        <div class="w-2/3">
+            <h2 class="text-3xl font-semibold mb-4">Kenny Åkerup</h2>
+            <h3 class="text-xl mb-4">Webbutvecklare · Moderna Frontendtekniker · Prestanda · Arkitektur</h3>
+
+            <div class="flex gap-6">
+                <a href="https://github.com/KenZan00" class="text-ibm-dark transition-all duration-500 hover:text-ibm-blue hover:scale-110">
+                    <GithubIcon class="w-6 h-6" />
+                </a>
+
+                <a href="https://www.linkedin.com/in/kenny-akerup/" class="text-ibm-dark transition-all duration-500 hover:text-ibm-blue hover:scale-110">
+                    <LinkedinIcon class="w-6 h-6" />
+                </a>
+
+                <a href="#" class="text-ibm-dark transition-all duration-500 hover:text-ibm-blue hover:scale-110">
+                    <MailIcon class="w-6 h-6" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-24 space-y-4 mb-12">
+        <p class=" text-lg max-w-2xl mx-auto">Min passion inom webbutveckling ligger i prestandainriktade, rena och lättanvända applikationer. Jag gillar också variation, att lära mig nytt och att experimentera med lösningar och lekfull design i mina projekt. Detta driver mig att hitta nya och hållbara vägar framåt.</p>
+        <p class=" text-lg max-w-2xl mx-auto">Vare sig jag arbetar med Astro, React, Docker eller skriver backend-logik trivs jag bäst med att förstå helheten och utvecklas med de tekniker som används.</p>
+        <p class=" text-lg max-w-2xl mx-auto">Även om jag väljer att fronta mig som frontend-fokuserad har jag en bred utbildning bakom mig med erfarenhet av programmering av global state, sockets , kartor, API:er, databaser och containerisering, för att nämna några tekniker. För mig är det viktigt att skapa stabila, snabba och genomtänkta lösningar oavsett vilka tekniker som används.</p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-12 max-w-900 border-t border-ibm-gray/90 pt-18">
+        <div class="p-6 rounded-xl border border-ibm-gray transition-all duration-300 
+            hover:shadow-[0_0_12px_rgba(155,196,226,0.95)] cursor-pointer">
+            <h3 class="text-xl font-semibold mb-2 text-center">Electric Revolution</h3>
+            <Image
+                src={TestImg}
+                alt="Test image"
+                class="object-contain"
+            />
+            <p>Ett grupparbete i design och implementation av en scooter applikation med live-updaterad karta</p>
+        </div>
+        <div class="p-6 rounded-xl border border-ibm-gray scale-112 transition-all duration-300 
+            hover:shadow-[0_0_12px_rgba(180,167,214)] cursor-pointer">
+            <h3 class="text-xl font-semibold mb-2 text-center">Prestandastudie</h3>
+            <Image
+                src={TestImg}
+                alt="Test image"
+                class="object-contain"
+            />
+            <p>En studie i frontend-arkitekturers påverkan på prestanda och datamängd.</p>
+            <p class="pt-6 text-center ">React · Astro/Svelte</p>
+
+            <p></p>
+        </div>
+        <div class="p-6 rounded-xl border border-ibm-gray transition-all duration-300 
+            hover:shadow-[0_0_12px_rgba(155,196,226,0.95)] cursor-pointer">
+            <h3 class="text-xl font-semibold mb-2 text-center">SSR-editor</h3>
+            <Image
+                src={TestImg}
+                alt="Test image"
+                class="object-contain"
+            />
+            <p>En ssr-editor med möjlighet för flera användare att arbeta på samma dokument, samtidigt.</p>
+        </div>
+        <div>
+
+        </div>
+    </section>  
 </Layout>
