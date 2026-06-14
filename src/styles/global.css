@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ibm-blue: #3A6EA5;
+  --color-ibm-cyan: #9BC4E2;
+  --color-ibm-purple: #B4A7D6;
+  --color-ibm-gray: #C7C7C7;
+  --color-ibm-dark: #4D4D4D;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--color-gray-900);
+}
+
+h1, h2, h3 {
+  font-weight: 700; 
+}
+
+.ibm-logo-text {
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: repeating-linear-gradient(
+    to bottom,
+    #3A6EA5 0,
+    #3A6EA5 3px,
+    transparent 1px,
+    transparent 4px
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.ibm-lines {
+  position: fixed;
+  top: calc((100vh - 71%) / 2);
+  left: calc((100vw - 1280px) / 2 + 130px);
+  z-index: 9999;
+  width: 20px;
+  height: 100vh;
+  background:
+    linear-gradient(to bottom, #3A6EA5 0%, #3A6EA5 100%) 0 0 / 4px 100% no-repeat,
+    linear-gradient(to bottom, #00A3E0 0%, #00A3E0 100%) 8px 0 / 3px 100% no-repeat,
+    linear-gradient(to bottom, #8A2BE2 0%, #8A2BE2 100%) 14px 0 / 2px 100% no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
