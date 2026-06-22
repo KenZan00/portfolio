@@ -8,7 +8,7 @@ export async function POST({ request }: { request: Request }) {
     console.log('Server received:', { email, message });
 
     const {data, error} = await resend.emails.send({
-        from: "My portfolio <onboarding@resend.dev>",
+        from: "Portfolio <no-reply@akerup.se>",
         to: import.meta.env.MY_EMAIL,
         subject: "Message from portfolio contact form",
         replyTo: email,
