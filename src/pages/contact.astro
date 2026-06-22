@@ -1,0 +1,12 @@
+---
+// import EmailForm from '../components/EmailForm.astro';
+import ContactForm from '../components/ContactForm.svelte';
+import Layout from '../layout/Layout.astro';
+---
+<Layout title="Contact">
+    <section class="flex w-full items-center justify-center flex-col gap-12 py-12 border-2 border-ibm-gray rounded-lg p-12">
+        <h2 class="text-3xl font-semibold mb-4">Kontakta mig</h2>
+        <!-- <EmailForm /> -->
+        <ContactForm client:load />
+    </section>
+</Layout>
