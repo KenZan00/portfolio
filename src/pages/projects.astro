@@ -1,0 +1,13 @@
+---
+import  { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../layout/Layout.astro';
+import SingleProject from '../components/SingleProject.astro';
+
+const projects = await getCollection('projectCollection');
+---
+
+<Layout title="projects">
+    {projects.map(({ data }) => (
+        <SingleProject project={data} />
+    ))}
+</Layout>
