@@ -1,6 +1,7 @@
 ---
 title: "Electric Revolution"
 image: "test.jpg"
+slug: "electric-revolution"
 tech: ["React", "Express", "MongoDB", "Docker"]
 description: "Ett projekt med realtidskarta över hyrscootrar. Utvecklat med karta, sockets, CI-flöde och fullt containeriserat"
 github: "https://github.com/git-Stella/vteam"

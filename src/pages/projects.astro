@@ -1,13 +1,14 @@
 ---
 import  { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../layout/Layout.astro';
-import SingleProject from '../components/SingleProject.astro';
 
 const projects = await getCollection('projectCollection');
 ---
 
 <Layout title="projects">
-    {projects.map(({ data }) => (
-        <SingleProject project={data} />
+    {projects.map((project) => (
+        <a href={`/projects/${project.slug}`}>
+            {project.data.title}
+        </a>
     ))}
 </Layout>
