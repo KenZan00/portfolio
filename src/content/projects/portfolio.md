@@ -1,6 +1,5 @@
 ---
 title: "My Portfolio"
-slug: "portfolio"
 image: "test3.jpg"
 tech: ["React", "Express", "MongoDB", "Docker"]
 description: "Ett projekt med realtidskarta över hyrscootrar. Utvecklat med karta, sockets, CI-flöde och fullt containeriserat"
