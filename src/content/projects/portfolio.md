@@ -1,28 +1,29 @@
 ---
-title: "My Portfolio"
+title: "Portfolio"
 image: "test3.jpg"
-tech: ["React", "Express", "MongoDB", "Docker"]
-description: "Ett projekt med realtidskarta över hyrscootrar. Utvecklat med karta, sockets, CI-flöde och fullt containeriserat"
-github: "https://github.com/git-Stella/vteam"
+tech: ["Astro", "Svelte", "Tailwind", "Resend", "Deployment"]
+description: "En studie i frontendarkitekturens påverkan på prestanda och dataförbrukning i tre identiska UI"
+github: "http://github.com/KenZan00/web-performance-comparison-react-astro.svelte"
 ---
 
 ## Projektet
 
-Projektet är ett grupparbete mellan mig och tre andra kurskamrater på BTH. Projektets syfte är att skapa en applikation som hanterar processen runt elscootrar i städerna både ur en synvinkel från användaren och från administratören.
+Min portfolio är en avskalad portfoliosida som visuellt är kombination av modern och retrodesign med inspiration från IBM. Dess huvuduppgift är att med en avskalad approach, presentera mig som utvecklare,några av mina tidigare projekt, och visa på vilka tekniker jag är mest bekväm med.
+
+Detta projekt är både enkelt, har hög prestanda och är modulärt och skalbart utan att överkomplicera en portfolio. Den nyttjar en layout för alla sidor, collections med dynamiskt skapade routes, svelte-komponent som en hydrated island för formulär och är anpassad för att lätt kunna lägga till fler projekt i framtiden.
+
+Kontaktformuläret använder Resend som mailtjänst och vidarebefodrar meddelanden till egen domän, vilket ger en professionell och säker kontakt. 
 
 ## Tekniker
 
-- React - Frontend (Full client side)
-- Zustand - State management
-- Leaflet - Kartor
-- Socket.io - realtidsuppdateringar för scootrar
-- Express - Backend
-- Event bus - Hantering av alla sidoeffekter runt att hyra scooter
-- MongoDB - SQL Databas
-- Docker - Full containerisering (compose)
-- Continous Integration Github
-- SonarQube - Statisk kodanalys
+- Astro - I statiskt läge
+- Svelte - Enskilda interaktiva komponenter
+- Tailwind CSS - Styling
+- Resend - hantering av e-post
 
 ## Lärdom
 
-Under projektet har jag i huvudsak arbetat med projektets arkitektur, globala state, karta med rendering, docker och data/simulering.
+Min portfolio sida har ökat mina kunskaper i Astro genom att kombinera för mig nya tekniker med tekniker jag använt i tidigare projekt. Den har också get mig en grund i att ha en utility based styling genom att använda Tailwind css.
+
+Genom att göra min egen deployment med införskaffad domän genom bland annat genom att koppla min DNS till vercel och mx-records till Zoho som användes med resend, lärde jag mig hur man skaffar en stabil och säker lösning för e-post med hög leveranssäkerhet för min portfolio.   
+
