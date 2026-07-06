@@ -1,28 +1,28 @@
 ---
 title: "SSR-Editor"
 image: "test4.jpg"
-tech: ["React", "Express", "MongoDB", "Docker"]
-description: "Ett projekt med realtidskarta över hyrscootrar. Utvecklat med karta, sockets, CI-flöde och fullt containeriserat"
-github: "https://github.com/git-Stella/vteam"
+tech: ["React", "Express", "MongoDB", "Azure"]
+description: "En realtidsuppdaterad text-editor med sammarbetsfunktioner liknande google docs, inklusive Monaco code editor och API-baserad kodkörning."
+github: "https://github.com/KenZan00/ssr-frontend/tree/dev"
 ---
 
 ## Projektet
 
-Projektet är ett grupparbete mellan mig och tre andra kurskamrater på BTH. Projektets syfte är att skapa en applikation som hanterar processen runt elscootrar i städerna både ur en synvinkel från användaren och från administratören.
+Projektet är ett grupparbete mellan mig och en kurskamrat på BTH. Applikationen består av en text-editor samt Monaco code editor. Båda är kopplade med socket.io vilket möjliggör realtidsredigering. Projektet innehåller även backend och databas som ligger i ett separat repo.
+
+### Applikation i tre delar
+- Frontend: React, hostad via pages
+- Backend: Express deployad på Azure
+- Databas: MongoDB Atlas
 
 ## Tekniker
 
 - React - Frontend (Full client side)
-- Zustand - State management
-- Leaflet - Kartor
-- Socket.io - realtidsuppdateringar för scootrar
-- Express - Backend
-- Event bus - Hantering av alla sidoeffekter runt att hyra scooter
-- MongoDB - SQL Databas
-- Docker - Full containerisering (compose)
-- Continous Integration Github
-- SonarQube - Statisk kodanalys
+- Monaco - Editor för kod som körs via API
+- Socket.io - Realtidsuppdateringar för dokument
+- Express - Backend i Azure
+- MongoDB - Atlas
 
 ## Lärdom
 
-Under projektet har jag i huvudsak arbetat med projektets arkitektur, globala state, karta med rendering, docker och data/simulering.
+Det här projektet var ett av mina första större webbutvecklingsprojekt under utbildningen. Detta projekt  påbörjade min resa med React, hantering av grupper i socket.io, förstärkte min förståelse för hur man får upp en fungerande applikation som består av flera delar på webben och hanteringen av dessa integrationer. 
