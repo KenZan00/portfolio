@@ -25,5 +25,5 @@ Kontaktformuläret använder Resend som mailtjänst och vidarebefodrar meddeland
 
 Min portfolio sida har ökat mina kunskaper i Astro genom att kombinera för mig nya tekniker med tekniker jag använt i tidigare projekt. Den har också get mig en grund i att ha en utility based styling genom att använda Tailwind css.
 
-Genom att göra min egen deployment med införskaffad domän genom bland annat genom att koppla min DNS till vercel och mx-records till Zoho som användes med resend, lärde jag mig hur man skaffar en stabil och säker lösning för e-post med hög leveranssäkerhet för min portfolio.   
+Genom att göra min egen deployment med införskaffad domän, koppla min DNS till vercel och mx-records till Zoho som användes med resend i projektet, lärde jag mig hur man skaffar en stabil och säker lösning för e-post med hög leveranssäkerhet för min portfolio.   
 
