@@ -5,8 +5,8 @@ import Layout from '../../layout/Layout.astro';
 export async function getStaticPaths() {
     const projects = await getCollection('projects');
 
-    console.log("PROJECT COUNT:", projects.length);
-    console.log("PROJECTS:", projects);
+    // console.log("PROJECT COUNT:", projects.length);
+    // console.log("PROJECTS:", projects);
 
     return projects.map(project => ({
         params: { slug: project.id },
@@ -15,10 +15,12 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
+const { Content } = await render(project);
 ---
 
 <Layout title={project.data.title}>
-    {console.log(project.data.title)}
-    <h1>{project.data.title}</h1>
-    <p>H'r kommer allting som vi h'mtade fr[n props.]</p>
+    <h1 class="text-3xl font-bold my-12">{project.data.title}</h1>
+    <article class="prose prose-neutral max-w-none">
+        <Content />
+    </article>
 </Layout>
