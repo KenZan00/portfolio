@@ -1,7 +1,7 @@
 ---
 title: "Portfolio"
 image: "test3.jpg"
-tech: ["Astro", "Svelte", "Tailwind", "Resend", "Deployment"]
+tech: ["Astro", "Svelte", "TailwindCss", "Resend"]
 description: "En studie i frontendarkitekturens påverkan på prestanda och dataförbrukning i tre identiska UI"
 github: "http://github.com/KenZan00/web-performance-comparison-react-astro.svelte"
 ---
