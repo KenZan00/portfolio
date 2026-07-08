@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layout/Layout.astro';
+import GithubIcon from "../../assets/github.svg";
 
 export async function getStaticPaths() {
     const projects = await getCollection('projects');
@@ -19,8 +20,15 @@ const { Content } = await render(project);
 ---
 
 <Layout title={project.data.title}>
-    <h1 class="text-3xl font-bold my-12">{project.data.title}</h1>
-    <article class="prose prose-neutral max-w-none">
+    <h1 class="text-3xl font-bold mt-12 mb-6">{project.data.title}</h1>
+    <p class="text-xl text-ibm-dark mb-6">{project.data.description}</p>
+    <div class="flex items-center gap-4 mt-4">
+        <a href={project.data.github}><GithubIcon class="w-6 h-6 hover:text-ibm-blue mb-6" /></a>
+    </div>
+
+    <hr class="border-ibm-dark mb-8 mt-6" />
+
+    <article class="prose prose-neutral max-w-none mt-12">
         <Content />
     </article>
 </Layout>
