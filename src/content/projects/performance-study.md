@@ -1,7 +1,7 @@
 ---
 title: "Performance Study"
 image: "test2.jpg"
-tech: ["Astro", "Svelte", "React", "Hono", "Google Lighthouse"]
+tech: ["Astro", "Svelte", "React", "Hono", "Lighthouse"]
 description: "En studie i frontendarkitekturens påverkan på prestanda och dataförbrukning i tre identiska UI"
 github: "http://github.com/KenZan00/web-performance-comparison-react-astro.svelte"
 ---
