@@ -27,7 +27,7 @@ const { Content } = await render(project);
     </div>
     <hr class="border-ibm-dark opacity-50 mb-8 mt-6" />
 
-    <div>{project.data.tech.map(tech => <img src={`/public/logos/${tech.toLowerCase()}.svg`} alt={tech} class="w-16 h-16 object-contain" />)}</div>
+    <div class="flex justify-around my-24">{project.data.tech.map(tech => <img src={`/public/logos/${tech.toLowerCase()}.svg`} alt={tech} class="w-16 h-16 object-contain" />)}</div>
 
 
     <article class="prose prose-neutral max-w-none mt-12 mb-12">
