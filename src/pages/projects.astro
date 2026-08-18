@@ -7,7 +7,12 @@ const projects = await getCollection('projects');
 ---
 
 <Layout title="projekt">
-    {projects.map((project) => (
-        <SingleProject project={project} />
-    ))}
+    <div class="divide-y divide-ibm-gray">
+        {projects.map((project) => (
+            <div class="py-16">
+                <h2 class="text-2xl mb-4">{project.data.title}</h2>
+                <SingleProject project={project} />
+            </div>
+        ))}
+    </div>
 </Layout>
