@@ -1,0 +1,16 @@
+---
+const { project } = Astro.props;
+---
+
+<div class="flex flex-col gap-6">
+    <p>{project.data.description}</p>
+    <a href={project.data.github} target="_blank" class="text-blue-500 hover:underline">Länk till projektet på GitHub →</a>
+    <div class="flex flex-wrap gap-2">
+        {project.data.tech.map((t : string) => (
+            <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">{t}</span>
+        ))}
+    </div>
+    <a href={`/projects/${project.id}`}
+    class="inline-block self-start border rounded-sm border-ibm-gray/90 px-4 py-2 transition-colors duration-300 hover:bg-ibm-blue hover:text-white"
+    >Läs mer</a>
+</div>
