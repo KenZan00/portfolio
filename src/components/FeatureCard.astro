@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+
+const { title, image, description, featured = false } = Astro.props;
+---
+
+<div
+    class:list={[
+        "flex flex-col gap-4",
+        "p-6 rounded-md border border-ibm-gray transition-all duration-300",
+        "hover:shadow-[0_0_12px_rgba(155,196,226,0.95)] cursor-pointer",
+        featured && "scale-112"
+    ]}
+    >
+    <h3 class="text-xl font-semibold mb-2 text-center">{title}</h3>
+
+    <Image
+        src={image}
+        alt={title}
+        class="object-contain"
+    />
+    <p>{description}</p>
+</div>
