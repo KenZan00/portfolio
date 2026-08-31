@@ -4,20 +4,22 @@ import { Image } from 'astro:assets';
 
 import FeatureCard from "../components/FeatureCard.astro";
 
-import HeroImage from "../assets/hero.svg";
 import GithubIcon from "../assets/github.svg";
 import LinkedinIcon from "../assets/linkedin.svg";
 import MailIcon from "../assets/mail.svg";
-import TestImg from "../assets/test-img.jpg";
+import ElectricRevolutionImg from "../assets/electric-rev.jpg";
+import ThesisFrontImg from "../assets/thesis-frontpage.png";
+import PortfolioImg from "../assets/portfolio-frontpage.png";
+import ProfileImg from "../assets/profile-image.jpg"; 
 ---
 
 <Layout title="Portfolio home">
-    <section class="flex items-center justify-around flex-col md:flex-row gap-12 mt-6">
-        <div class="w-1/3 max-w-50 rounded-lg overflow-hidden">
+    <section class="flex items-center justify-around flex-col md:flex-row gap-12 mt-12">
+        <div class="w-1/3 max-w-56 rounded-lg overflow-hidden">
             <Image
-                src={HeroImage}
+                src={ProfileImg}
                 alt="Kenny"
-                class="object-contain"
+                class="object-cover w-full h-full rounded-md"
             />        
         </div>
 
@@ -50,18 +52,18 @@ import TestImg from "../assets/test-img.jpg";
     <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-12 max-w-900 border-t border-ibm-gray/90 pt-28">
         <FeatureCard
             title="Electric Revolution"
-            image={TestImg}
+            image={ElectricRevolutionImg}
             description="Ett grupparbete i design och implementation av en scooter applikation med live-updaterad karta"
         />
         <FeatureCard
             title="Prestandastudie"
-            image={TestImg}
+            image={ThesisFrontImg}
             description="En studie i frontend-arkitekturers påverkan på prestanda och datamängd. Studien fokuserar på React och Astro/Svelte med olika renderingstekniker"
             featured={true}
         />
         <FeatureCard
             title="Portfolio"
-            image={TestImg}
+            image={PortfolioImg}
             description="Denna portfolio är byggd med Astro och Tailwind. Den är byggd med fokus på prestanda, struktur och enkelhet."
         />
     </section> 
