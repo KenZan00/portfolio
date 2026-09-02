@@ -18,15 +18,9 @@ import { contactApi } from '../utils/contact.ts';
             if (res.ok) {
                 status = 'success';
             }
-
-            console.log('Contact message sent successfully');
         } catch (error) {
-            console.error('Error sending contact message:', error);
             status = 'error';
         }
-
-        // console.log('Email:', email);
-        // console.log('Message:', message);
         email = '';
         message = '';
     }
@@ -73,8 +67,8 @@ import { contactApi } from '../utils/contact.ts';
 </form>
 
 {#if status === 'success'}
-    <p class="text-green-600 mt-4">Meddelandet skickades framgångsrikt!</p>
+    <p>Skickat!</p>
 {/if}
 {#if status === 'error'}
-    <p class="text-red-600 mt-4">Ett fel uppstod när meddelandet skickades.</p>
+    <p>Ett fel uppstod!</p>
 {/if}
