@@ -10,14 +10,14 @@ github: "https://github.com/git-Stella/vteam"
 
 Electric Revolution är ett gruppprojekt utvecklat tillsammans med tre kurskamrater vid BTH. Projektets syfte var att skapa ett system för hantering av elscootrar, för både användare och administratör enligt en fiktiv kunds kravspecifikation.
 
-Inledningsvis tog vi fram en System Design Specification där vi dokumenterat projektets funktionalitet, arkitektur & teknikval. Lösningen implementerades sedan enligt denna och presenterades med en full simulering av projektet.
+Inledningsvis tog vi fram en System Design Specification där vi dokumenterade projektets funktionalitet, arkitektur & teknikval. Lösningen implementerades sedan enligt denna och presenterades med en full simulering av projektet.
 
 ## Tekniker
 
-- React - Frontend (Full client side)
+- React - Frontend (Full client side SPA)
 - Zustand - State management
 - Leaflet - Kartor
-- Socket.io - realtidskommunikation
+- Socket.io - Realtidskommunikation
 - Express - Backend
 - Event bus - Hantering av händelser i systemet
 - MariaDB - Relationsdatabas
@@ -31,7 +31,7 @@ Jag arbetade med både frontend, backend och projektets struktur.
 
 ### Frontend
 
-- Implementarede global state med Zustand
+- Implementerade global state med Zustand
 - Realtidsuppdateringar via socket.io
 - Kartfunktionalitet med leaflet
 - Byggde komponenter för scootrar och uthyrning.
@@ -43,7 +43,7 @@ Jag arbetade med både frontend, backend och projektets struktur.
 - Eventemitter för affärslogik
 - Socket-io med kopplad simulation
 - Rutter för simuleringen
-- Hjälpfunktioner och en del CRUD operationer.
+- Hjälpfunktioner och en måttlig del CRUD operationer.
 
 ### Miljö
 
