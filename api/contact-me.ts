@@ -1,27 +1,34 @@
-export const prerender = false;
-
 import { Resend } from 'resend';
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-const apiKeyResend = import.meta.env.API_KEY_RESEND
-const resend = new Resend(apiKeyResend);
+const resend = new Resend(process.env.API_KEY_RESEND);
 
-export async function POST({ request }: { request: Request }) {
-    const { email, message } = await request.json();
+export default async function handler(
+    req: VercelRequest,
+    res: VercelResponse
+) {
+    if (req.method !== 'POST') {
+        return res.status(405).json({ error: 'Method not allowed' });
+    }
+
+    const { email, message } = req.body;
+
     console.log('Server received:', { email, message });
 
-    const {data, error} = await resend.emails.send({
-        from: "Portfolio <no-reply@akerup.se>",
-        to: import.meta.env.MY_EMAIL,
-        subject: "Message from portfolio contact form",
+    const { data, error } = await resend.emails.send({
+        from: 'Portfolio <no-reply@akerup.se>',
+        to: process.env.MY_EMAIL!,
+        subject: 'Message from portfolio contact form',
         replyTo: email,
         text: message,
     });
 
     if (error) {
         console.error('Error sending email:', error);
-        return new Response("Not ok", {status: 500});
+        return res.status(500).json({ error: 'Failed to send email' });
     }
 
     console.log({ data });
-    return Response.json({ ok: true });
+
+    return res.status(200).json({ ok: true });
 }
