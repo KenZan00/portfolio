@@ -14,6 +14,8 @@ Projektet sätter upp en empirisk studie med tre funktionellt och visuellt ident
 
 Resultaten analyseras med Pandas för att identifiera de olika lösningarnas prestanda och avvikelsevärden. Den teoretiska delen av examensarbetet går igenom en noggrant formulerad metod för att undvika bias, gör en litteraturundersökning och analyserar resultaten både inom projektet och deras generaliserbarhet.
 
+**Publicerad under: rn:nbn:se:bth-29693**
+
 ## Tekniker
 
 - React - SPA med react router
