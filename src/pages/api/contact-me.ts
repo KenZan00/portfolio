@@ -1,3 +1,5 @@
+export const prerender = false;
+
 import { Resend } from 'resend';
 
 const apiKeyResend = import.meta.env.API_KEY_RESEND

@@ -14,6 +14,8 @@ Projektet sätter upp en empirisk studie med tre funktionellt och visuellt ident
 
 Resultaten analyseras med Pandas för att identifiera de olika lösningarnas prestanda och avvikelsevärden. Den teoretiska delen av examensarbetet går igenom en noggrant formulerad metod för att undvika bias, gör en litteraturundersökning och analyserar resultaten både inom projektet och deras generaliserbarhet.
 
+**Publicerad under: rn:nbn:se:bth-29693**
+
 ## Tekniker
 
 - React - SPA med react router
@@ -27,8 +29,8 @@ Resultaten analyseras med Pandas för att identifiera de olika lösningarnas pre
 
 ## Lärdom
 
-Examensjobbet lärde mig om hur olika frontendarkitekturer fungerar under ytan, och hur deras redneringsstrategier påverkar prestanda och dataförbrukning i applikationer.
+Examensjobbet lärde mig mer om hur olika frontendarkitekturer fungerar, och hur deras renderingsstrategier påverkar prestanda och dataförbrukning i applikationer.
 
-Att arbeta med en empirisk studie gav mig kunskap inom hur man sätter upp experimentiell kod och hur dessa kan jämföras samt en ökad kunskap om metodik.
+Att arbeta med en empirisk studie gav mig kunskap inom hur man sätter upp experimentiell kod och hur dessa kan jämföras, samt en ökad kunskap om metodik.
 
-En av dem viktigaste kunskaperna jag fick från detta projekt var hur man med hjälp av korrekta teknikval redan i planeringsarbetet kan påverka en webapplikations framtida prestanda och dataförbrukning.
+En av dem viktigaste kunskaperna jag fick från detta projekt var hur man med hjälp av korrekta teknikval redan i planeringsarbetet kan påverka en webapplikations framtida prestanda och dataförbrukning och hur dessa korrelerar med varandra.
