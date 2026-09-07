@@ -17,6 +17,7 @@ const { title, image, description, featured = false } = Astro.props;
     <Image
         src={image}
         alt={title}
+        sizes="(max-width: 767px) calc(100vw - 6rem), 240px"
         class="w-full h-64 object-cover object-center"
     />
     <p>{description}</p>
